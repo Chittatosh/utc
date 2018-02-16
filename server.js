@@ -12,7 +12,7 @@ app.use(cors({optionSuccessStatus: 200}));  // some legacy browsers choke on 204
 
 function unix(timestamp) {
   this.unix = timestamp.getTime();
-  this.utc = timestamp.toUTCString();
+  this.natural = timestamp.toUTCString();
 }
 
 app.use(function(req, res, next) {
